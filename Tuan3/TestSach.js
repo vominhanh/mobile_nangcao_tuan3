@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var SachGiaoKhoa_1 = require("./SachGiaoKhoa");
+var SachThamKhao_1 = require("./SachThamKhao");
+var date = new Date();
+var sach1 = new SachGiaoKhoa_1.SachGiaoKhoa('1', date, 20, 7, 'MinhAnh', true);
+var sach2 = new SachGiaoKhoa_1.SachGiaoKhoa('2', date, 20, 5, 'MinhAnh', false);
+var sach3 = new SachThamKhao_1.SachThamKhao('3', date, 20, 3, 'MinhAnh', 12);
+console.log(sach1);
+console.log(sach1.totalPrice());
+console.log(sach2);
+console.log(sach2.totalPrice());
+console.log(sach3);
+console.log(sach3.totalPrice());
